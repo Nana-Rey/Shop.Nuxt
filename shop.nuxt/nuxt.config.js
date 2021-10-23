@@ -1,9 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
-//import Amplify, { graphqlOperation } from 'aws-amplify'
-//import awsConfig from '@/src/aws-exports'
-//Amplify.configure(awsConfig)
 
-
+require('dotenv').config();
+const{API_KEY}= process.env;
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -29,7 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@src/plugins/amplify.js',
+    {src: '@src/plugins/amplify.ts', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -68,5 +66,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  env:{
+    API_KEY
   }
 }

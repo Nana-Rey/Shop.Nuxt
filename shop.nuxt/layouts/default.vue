@@ -103,8 +103,16 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: '商品登録',
           to: '/inspire'
+        },
+        {
+          title: 'ログイン',
+          to: '/register'
+        },
+        {
+          title:'ログイン2',
+          to:'/test'
         }
       ],
       miniVariant: false,
