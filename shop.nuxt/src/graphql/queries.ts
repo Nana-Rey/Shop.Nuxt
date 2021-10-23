@@ -8,8 +8,8 @@ export const getItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
@@ -25,8 +25,8 @@ export const listItems = /* GraphQL */ `
         id
         name
         itemname
-        description
         createdAt
+        description
         updatedAt
       }
       nextToken

@@ -1,6 +1,10 @@
-type Item @model {
+type Item
+ @model{
   id: ID!
   name: String!
   itemname: String!
+  createdAt: String!
   description: String
+  
 }
+

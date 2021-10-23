@@ -8,8 +8,8 @@ export const onCreateItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
@@ -20,8 +20,8 @@ export const onUpdateItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
@@ -32,8 +32,8 @@ export const onDeleteItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }

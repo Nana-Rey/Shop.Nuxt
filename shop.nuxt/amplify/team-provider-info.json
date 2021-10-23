@@ -10,6 +10,11 @@
       "StackName": "amplify-shopnuxt-dev-140533",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:264818912281:stack/amplify-shopnuxt-dev-140533/32289520-309a-11ec-b3be-065b09335493",
       "AmplifyAppId": "d1wdxa4mfqe6wc"
+    },
+    "categories": {
+      "auth": {
+        "shopnuxt9cbd26c5": {}
+      }
     }
   }
 }

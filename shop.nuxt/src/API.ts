@@ -6,12 +6,14 @@ export type CreateItemInput = {
   id?: string | null,
   name: string,
   itemname: string,
+  createdAt?: string | null,
   description?: string | null,
 };
 
 export type ModelItemConditionInput = {
   name?: ModelStringInput | null,
   itemname?: ModelStringInput | null,
+  createdAt?: ModelStringInput | null,
   description?: ModelStringInput | null,
   and?: Array< ModelItemConditionInput | null > | null,
   or?: Array< ModelItemConditionInput | null > | null,
@@ -63,8 +65,8 @@ export type Item = {
   id: string,
   name: string,
   itemname: string,
-  description?: string | null,
   createdAt: string,
+  description?: string | null,
   updatedAt: string,
 };
 
@@ -72,6 +74,7 @@ export type UpdateItemInput = {
   id: string,
   name?: string | null,
   itemname?: string | null,
+  createdAt?: string | null,
   description?: string | null,
 };
 
@@ -83,6 +86,7 @@ export type ModelItemFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   itemname?: ModelStringInput | null,
+  createdAt?: ModelStringInput | null,
   description?: ModelStringInput | null,
   and?: Array< ModelItemFilterInput | null > | null,
   or?: Array< ModelItemFilterInput | null > | null,
@@ -122,8 +126,8 @@ export type CreateItemMutation = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -139,8 +143,8 @@ export type UpdateItemMutation = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -156,8 +160,8 @@ export type DeleteItemMutation = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -172,8 +176,8 @@ export type GetItemQuery = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -192,8 +196,8 @@ export type ListItemsQuery = {
       id: string,
       name: string,
       itemname: string,
-      description?: string | null,
       createdAt: string,
+      description?: string | null,
       updatedAt: string,
     } | null > | null,
     nextToken?: string | null,
@@ -206,8 +210,8 @@ export type OnCreateItemSubscription = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -218,8 +222,8 @@ export type OnUpdateItemSubscription = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };
@@ -230,8 +234,8 @@ export type OnDeleteItemSubscription = {
     id: string,
     name: string,
     itemname: string,
-    description?: string | null,
     createdAt: string,
+    description?: string | null,
     updatedAt: string,
   } | null,
 };

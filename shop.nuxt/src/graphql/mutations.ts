@@ -11,8 +11,8 @@ export const createItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
@@ -26,8 +26,8 @@ export const updateItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
@@ -41,8 +41,8 @@ export const deleteItem = /* GraphQL */ `
       id
       name
       itemname
-      description
       createdAt
+      description
       updatedAt
     }
   }
