@@ -1,19 +1,44 @@
 <template>
-  <v-row>
-    <v-col class="text-center">
-      <img
-        src="/v.png"
-        alt="Vuetify.js"
-        class="mb-5"
-      >
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-col>
-  </v-row>
+  <div>
+    <v-form>
+      商品登録画面
+      <v-container>
+        <input type="text" v-model="itemname" label="商品名" />
+
+      </v-container>
+    </v-form>
+    <v-btn @click="createNewItem">
+      送信
+    </v-btn>
+  </div>
 </template>
+
+
+
+<script lang="ts">
+import Vue from "vue";
+interface ItemType{ 
+itemname:string
+}
+export default Vue.extend({
+  
+  data(): ItemType{
+    return{
+      itemname: '',
+    }
+  },
+  methods: {
+    createNewItem(event: any){
+      console.log(event.target.parentElement.getElementsByTagName("input"));
+    }
+  },
+})
+
+  
+</script>
+
+<style>
+
+</style>
+
+

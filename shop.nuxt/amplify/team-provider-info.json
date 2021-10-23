@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shopnuxt-dev-140533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::264818912281:role/amplify-shopnuxt-dev-140533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::264818912281:role/amplify-shopnuxt-dev-140533-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-shopnuxt-dev-140533-deployment",
+      "UnauthRoleName": "amplify-shopnuxt-dev-140533-unauthRole",
+      "StackName": "amplify-shopnuxt-dev-140533",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:264818912281:stack/amplify-shopnuxt-dev-140533/32289520-309a-11ec-b3be-065b09335493",
+      "AmplifyAppId": "d1wdxa4mfqe6wc"
+    }
+  }
+}

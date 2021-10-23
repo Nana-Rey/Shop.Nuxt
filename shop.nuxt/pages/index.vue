@@ -14,7 +14,7 @@
           <p>
             For more information on Vuetify, check out the <a
               href="https://vuetifyjs.com"
-              target="_blank"
+           
               rel="noopener noreferrer"
             >
               documentation
@@ -23,7 +23,7 @@
           <p>
             If you have questions, please join the official <a
               href="https://chat.vuetifyjs.com/"
-              target="_blank"
+             
               rel="noopener noreferrer"
               title="chat"
             >
