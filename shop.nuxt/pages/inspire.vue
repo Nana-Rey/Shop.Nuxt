@@ -17,6 +17,8 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { API, graphqlOperation } from 'aws-amplify';
+
 interface ItemType{ 
 itemname:string
 }
