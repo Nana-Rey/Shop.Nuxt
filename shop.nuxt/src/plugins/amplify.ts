@@ -1,5 +1,11 @@
-import Amplify from 'aws-amplify'
-import { Plugin } from '@nuxt/types'
+import Amplify,{ Auth }from 'aws-amplify';
+import { API, graphqlOperation } from 'aws-amplify';
+import '@aws-amplify/ui-vue';
+import awsconfig from '~/src/aws-exports.js';
+
+import { Plugin } from '@nuxt/types';
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
 
 const myPlugin: Plugin = (context, inject) => {
   Amplify.configure({

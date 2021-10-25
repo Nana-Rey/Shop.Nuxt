@@ -107,12 +107,8 @@ export default {
           to: '/inspire'
         },
         {
-          title: 'ログイン',
-          to: '/register'
-        },
-        {
-          title:'ログイン2',
-          to:'/test'
+          title:'ログイン',
+          to:'/register2'
         }
       ],
       miniVariant: false,

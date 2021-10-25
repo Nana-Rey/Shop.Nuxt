@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { Auth } from 'aws-amplify';
 const steps={
     register:'REGISTER',
     confirm: 'CONFIRM'
