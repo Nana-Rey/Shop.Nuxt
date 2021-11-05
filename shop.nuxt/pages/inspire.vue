@@ -17,26 +17,37 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { API, graphqlOperation } from 'aws-amplify';
+import { API, graphqlOperation } from "aws-amplify";
+import { createItem } from '../src/graphql/mutations'
 
 interface ItemType{ 
 itemname:string
 }
 export default Vue.extend({
-  
+  components:{
+
+  },
   data(): ItemType{
     return{
       itemname: '',
     }
   },
   methods: {
-    createNewItem(event: any){
-      console.log(event.target.parentElement.getElementsByTagName("input"));
+    
+    createNewItem:async function(){
+      await API.graphql(graphqlOperation(createItem,{input:this.itemname}))
+      
     }
-  },
-})
-
-  
+  //   async  createNewItem(event: any){
+  //    const{itemname}=this;
+  //    await API.graphql({
+  //      query: createItem,
+  //      variables:{input:itemname}
+  //    });
+  //    this.itemname='';
+  // },
+ }
+}) 
 </script>
 
 <style>

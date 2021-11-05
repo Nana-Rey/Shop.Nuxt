@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^7.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.3.0",
+    "stylelint": "^14.0.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-recommended-scss": "^5.0.1",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^4.0.0"
+  }
+}
